@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "performancemod",
+  "version": "1.0.0",
+  "name": "Performance Mod",
+  "description": "A high-performance optimization mod for Minecraft",
+  "authors": ["Flynn / Sani"],
+  "contact": {
+    "homepage": "https://github.com/yourusername/performancemod"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.example.performancemod.PerformanceMod"],
+    "client": [
+      "com.example.performancemod.render.FastRenderer",
+      "com.example.performancemod.render.ChunkMeshManager"
+    ]
+  },
+  "mixins": ["performancemod.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": ">=1.21.4",
+    "fabric": "*",
+    "java": ">=17"
+  },
+  "suggests": {
+    "sodium": "*",
+    "lithium": "*",
+    "phosphor": "*"
+  },
+  "custom": {
+    "optimizers": [
+      "com.example.performancemod.memory.MemoryManager",
+      "com.example.performancemod.chunk.ChunkLoadOptimizer"
+    ]
+  }
+} 

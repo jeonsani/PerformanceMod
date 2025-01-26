@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.example.performancemod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "EntityMixin",
+    "ChunkMixin",
+    "GameRendererMixin",
+    "ParticleManagerMixin",
+    "ChunkRendererMixin"
+  ],
+  "client": [
+    "EntityRenderMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+} 
