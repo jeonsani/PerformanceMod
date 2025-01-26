@@ -68,10 +68,10 @@ If you'd like to help fix this mod:
 - Fabric API
 
 ## Building (For Testing)
-```bash
+``bash
 git clone https://github.com/jeonsani/performancemod
 cd performancemod
-./gradlew build```
+./gradlew build``
 
 ## License
 
