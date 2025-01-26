@@ -69,7 +69,7 @@ If you'd like to help fix this mod:
 
 ## Building (For Testing)
 ``bash
-git clone https://github.com/jeonsani/performance-mod
+git clone https://github.com/jeonsani/performancemod
 cd performancemod
 ./gradlew build``
 
